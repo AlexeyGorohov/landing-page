@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -#{gutter()};
+  margin-left: -#{gutter()};
+
+  &_no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col, > [class*="col_"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &_flex-start {
+    align-items: flex-start;
+  }
+
+  &_j-c-between {
+    justify-content: space-between;
+  }
+
+  &_j-c-center {
+    justify-content: center;
+  }
+
+  &_a-i-center {
+    align-items: center;
+  }
+}

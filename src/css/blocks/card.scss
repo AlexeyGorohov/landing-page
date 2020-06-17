@@ -1,0 +1,47 @@
+.card {
+  &__title {
+    font-weight: 800;
+    line-height: 1.27;
+    color: $textColor;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-top: 18px;
+    font-weight: 500;
+    line-height: 1.42;
+    color: $addColorText;
+  }
+
+  &__icon {
+    font-size: 53px;
+    color: $addColor;
+
+    &_transform {
+      transform: translateX(-10px);
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__images-item {
+    margin-top: 21px;
+
+    &:not(:last-of-type) {
+      margin-right: 28px;
+    }
+  }
+
+  &_services {
+    .card__title {
+      margin-top: 34px;
+    }
+  }
+}

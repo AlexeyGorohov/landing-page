@@ -1,0 +1,25 @@
+.sidebar {
+  width: 393px;
+  position: fixed;
+  z-index: 100;
+  transform: translateX(-100%);
+  left: 0;
+  top: 0;
+  bottom: -60px;
+  background: #1c1c1b;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 140px;
+  padding-left: 100px;
+  padding-right: 10px;
+  @include transitionPage;
+  @include topMargin(padding-top);
+
+  @include showMenu {
+    transform: translateX(0);
+  }
+
+  &__top {
+    flex: 1;
+  }
+}

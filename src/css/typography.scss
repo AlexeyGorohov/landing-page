@@ -1,0 +1,84 @@
+html,
+body {
+  line-height: $globalLineHeight;
+  background-color: $globalBackgroundColor;
+  font-family: $baseFont;
+  font-weight: 500;
+  overflow-x: hidden;
+  height: -webkit-fill-available;
+  @include resize(font-size, 18, 15, 13);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $headingFontFamily;
+  font-weight: bold;
+  color: $textColor;
+}
+
+h1,
+.h1 {
+  @include resize(font-size, 96, 48, 32);
+}
+
+h2,
+.h2 {
+  @include resize(font-size, 30, 25, 20);
+}
+
+h3,
+.h3 {
+  @include resize(font-size, 28, 24, 19);
+}
+
+h4,
+.h4 {
+  @include resize(font-size, 25, 22, 18);
+}
+
+h5,
+.h5 {
+  @include resize(font-size, 24, 21, 17);
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 0.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+hr {
+  background-color: $mainColor;
+  display: block;
+  height: 5px;
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: $addColorText;
+  text-decoration: none;
+}

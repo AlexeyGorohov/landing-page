@@ -1,0 +1,8 @@
+.main {
+  flex: 1;
+  @include transitionPage;
+
+  @include showMenu {
+    transform: translateX(200px);
+  }
+}

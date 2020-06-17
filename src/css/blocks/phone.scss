@@ -1,0 +1,25 @@
+.phone {
+  &__label {
+    color: $addColorText;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  &__number {
+    font-size: 24px;
+    color: #BBBBBB;
+    white-space: nowrap;
+  }
+
+  &_sidebar {
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+  }
+  
+  &_footer {
+    &:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+  }
+}

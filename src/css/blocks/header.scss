@@ -1,0 +1,59 @@
+.header {
+  @include transitionPage;
+  @include topMargin(padding-top);
+
+  &__menu {
+    display: inline-block;
+    width: 25px;
+    height: 19px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__menu-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: 0.3s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &-open {
+      background-image: url('../images/menu.svg');
+
+      @include showMenu {
+        opacity: 0;
+      }
+    }
+
+    &-close {
+      opacity: 0;
+      background-image: url('../images/close.svg');
+
+      @include showMenu {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__row {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__col {
+    max-width: span(1);
+    flex: 0 0 span(1);
+    padding: 0 gutter();
+  }
+}

@@ -1,0 +1,33 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background: #c0965c;
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 28px 35px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #C0965C;
+  }
+
+  &_main {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  &_tab {
+    max-width: 352px;
+    width: 100%;
+  }
+
+  &[disabled] {
+    color: rgba(#fff, 0.2);
+    background-color: #191919;    
+  }
+}

@@ -1,0 +1,21 @@
+.animation {
+  transition: 0.7s ease-in-out;
+
+  &_transform-x-50 {
+    opacity: 0;
+    transform: translateX(50%);
+
+    &.animation-show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &_opacity {
+    opacity: 0;
+
+    &.animation-show {
+      opacity: 1;
+    }
+  }
+}

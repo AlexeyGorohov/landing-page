@@ -1,0 +1,17 @@
+.mx {
+  &-overflow-hidden {
+    overflow: hidden;
+  }
+
+  &-addcolor {
+    color: $addColor;;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-color-white {
+    color: #fff;
+  }
+}

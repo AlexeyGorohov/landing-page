@@ -1,0 +1,62 @@
+.tab {
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    font-size: 18px;
+    color: $addColorText;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+    &:not(:last-of-type) {
+      margin-right: 40px;
+    }
+
+    &:not(.active) {
+      cursor: pointer;
+    }
+
+    &.active {
+      color: $addColor;
+    }
+  }
+
+  &__content {
+    padding-top: 60px;
+  }
+
+  &__container {
+    &:not(.active) {
+      display: none;
+    }
+  }
+
+  &__prices {
+    margin-top: 67px;
+  }
+
+  &__price-item {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  &__price-label {
+    color: $addColorText;
+    max-width: 203px;
+    flex: 0 0 203px;
+  }
+
+  &__price-text {
+    padding-left: 25px;
+    flex: 1;
+    color: $textColor;
+  }
+
+  &__more {
+    margin-top: 27px;
+    line-height: 1.85;
+  }
+}

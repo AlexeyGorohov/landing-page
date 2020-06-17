@@ -1,0 +1,12 @@
+@import '~susy/sass/susy';
+
+// deleted
+@import '~susy/sass/plugins/svg-grid';
+@import '~susy/sass/plugins/svg-grid/prefix';
+
+$susy: (
+  'columns': susy-repeat(12),
+  'gutters': 10px,
+  'spread': 'wide',
+  'container-spread': 'wide',
+);

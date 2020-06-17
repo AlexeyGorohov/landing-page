@@ -1,0 +1,39 @@
+/*
+ ***********************
+        Font Settings
+ ***********************
+*/
+$baseFont: "Geometria", sans-serif;
+$captionFont: $baseFont;
+
+$globalLineHeight: 1.42;
+$globalBackgroundColor: #0E0E0E;
+
+/*
+ ***********************
+        Heading Settings
+ ***********************
+*/
+
+$headingFontFamily: $captionFont;
+
+/*
+ ***********************
+        Color Settings
+ ***********************
+*/
+
+$mainColor: #000;
+$textColor: #fff;
+$addColor: #C0965C;
+$addColorText: #6C6C6C;
+
+/*
+ ***********************
+        breakpoints
+ ***********************
+*/
+
+$bpDesktop: 1200px;
+$bpTablet: 991px;
+$bpMobile: 767px;

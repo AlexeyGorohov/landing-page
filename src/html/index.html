@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лучшая карта для любителей путешествий</title>
+</head>
+
+<body class="page page_main">
+  <div id="app">
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <nav class="sidebar__top">
+        <ul class="menu">
+          <div class="menu__item">Какие преимущества</div>
+          <div class="menu__item">Что вы получаете</div>
+          <div class="menu__item">Еще сюрпризы</div>
+          <div class="menu__item">Оформить карту</div>
+        </ul>
+      </nav>
+      <div class="sidebar__bottom">
+        <div class="phone phone_sidebar">
+          <div class="phone__label">По России</div>
+          <a href="tel:88009506570" class="phone__number">8 800 950 6570</a>
+        </div>
+        <div class="phone phone_sidebar">
+          <div class="phone__label">По Миру</div>
+          <a href="tel:88009506570" class="phone__number">8 800 950 6570</a>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar end -->
+    <div class="main">
+      <!-- Header start -->
+      <header class="header">
+        <div class="animation animation_opacity">
+          <div class="container">
+            <div class="header__row">
+              <div class="header__col header__col-menu">
+                <div id="menu" class="header__menu">
+                  <div class="header__menu-icon header__menu-icon-open"></div>
+                  <div class="header__menu-icon header__menu-icon-close"></div>
+                </div>
+              </div>
+              <div class="header__col header__col-logo">
+                <img class="header__logo" src="../images/logo.png" alt="Logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header end -->
+      <!-- Section main start -->
+      <section class="section section_main" id="main">
+        <div class="container animation animation_transform-x-50">
+          <div class="section__row">
+            <img class="section__image" src="../images/section_main_bg.png" alt="Заказать сейчас">
+            <div class="section__heading-container">
+              <h1 class="section__heading-main">Твоя премиум карта</h1>
+              <div class="section__sub-heading-main">Лучшая карта для любителей путешествий</div>
+            </div>
+            <div class="section__content">
+              <div class="pricing">
+                <div class="pricing__item">
+                  <div class="pricing__label">11%</div>
+                  <div class="pricing__text">Вернем за покупки милями</div>
+                </div>
+                <div class="pricing__item">
+                  <div class="pricing__label">0%</div>
+                  <div class="pricing__text">Бесплатное снятие наличных по всему миру</div>
+                </div>
+                <div class="pricing__item">
+                  <div class="pricing__label">7%</div>
+                  <div class="pricing__text">До 7% на остаток по счету</div>
+                </div>
+                <div class="pricing__item">
+                  <div class="pricing__label">0р</div>
+                  <div class="pricing__text">Бесплатное годовое обслуживание</div>
+                </div>
+              </div>
+              <button @click="showModal = true" class="button button_main">Заказать сейчас</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section main end -->
+
+      <!-- Section cards  start-->
+      <section class="section section_cards" id="cards">
+        <div class="animation animation_transform-x-50">
+          <div class="container">
+            <div class="section__row">
+              <h2 class="section__heading">Путешествие мечты начинается с CARD PLUS</h2>
+              <div class="section__sub-heading">Мы продумали каждую мелочь. Владельцы CARD PLUS получают
+                особый<br />пакет
+                привилегий, необходимый для любого путешествия</div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="section__row">
+              <div class="section__cards">
+                <div class="section__card">
+                  <div class="card">
+                    <div class="card__icon card__icon_transform icon card_bank"></div>
+                    <div class="card__title">
+                      Билеты любых авиакомпаний
+                    </div>
+                    <div class="card__text">
+                      Предложения от 300+ авиакомпаний, 185+ lowcost перевозчиков, чартеры от 60 крупных
+                      российскихтуроператоров
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card">
+                  <div class="card">
+                    <div class="card__icon card__icon_transform icon air"></div>
+                    <div class="card__title">
+                      Мили больше не сгорают
+                    </div>
+                    <div class="card__text">
+                      Мили, накопленные при оплате картой AlfaTravel, не сгорают и остаются на вашем счете, пока вы не
+                      решите их потратить
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card">
+                  <div class="card">
+                    <div class="card__icon card__icon_transform icon heart"></div>
+                    <div class="card__title">
+                      Продвинутая страховка – бесплатно
+                    </div>
+                    <div class="card__text">
+                      Расширенная страховка для всей семьи с учетом экстремальных видов спорта и алкоголя
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card">
+                  <div class="card">
+                    <div class="card__icon card__icon_transform icon money"></div>
+                    <div class="card__title">
+                      Доступ к счетам в разных валютах
+                    </div>
+                    <div class="card__text">
+                      Текущие счета в рублях, долларах США, евро, английских фунтах стерлингов и швейцарских франках
+                      открываются в любой момент
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section cards end -->
+
+      <!-- Section services start-->
+      <section class="section section_services" id="services">
+        <div class="animation animation_transform-x-50">
+          <div class="container">
+            <div class="section__row">
+              <h2 class="section__heading">Мы позаботились, чтобы вы получили</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="section__row">
+              <div class="section__cards section__cards_services">
+                <div class="section__card section__card_services">
+                  <div class="card card_services">
+                    <div class="card__wrap">
+                      <img class="card__image" src="../images/card_services_1.png"
+                        alt="Бесплатный безлимитный интернет в роуминге" />
+                      <div class="card__title">
+                        Бесплатный безлимитный интернет в роуминге
+                      </div>
+                      <div class="card__text">
+                        Предложения от 300+ авиакомпаний, 185+ lowcost перевозчиков, чартеры от 60 крупных
+                        российскихтуроператоров
+                      </div>
+                      <div class="card__images">
+                        <img class="card__images-item" src="../images/card_megafon_icon.png" alt="Megafon">
+                        <img class="card__images-item" src="../images/card_tele2_icon.png" alt="Tele2">
+                        <img class="card__images-item" src="../images/card_mts_icon.png" alt="Mts">
+                        <img class="card__images-item" src="../images/card_beeline_icon.png" alt="Beeline">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card section__card_services">
+                  <div class="card card_services">
+                    <div class="card__wrap">
+                      <img class="card__image" src="../images/card_services_2.png" alt="Бесплатная упаковка багажа" />
+                      <div class="card__title">
+                        Бесплатная упаковка багажа
+                      </div>
+                      <div class="card__text">
+                        Держатели карт Visa Signature могут упаковать багаж в крупных аэропортах России
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card section__card_services">
+                  <div class="card card_services">
+                    <div class="card__wrap">
+                      <img class="card__image" src="../images/card_services_3.png"
+                        alt="Бесплатный доступ в приложении App In The Air" />
+                      <div class="card__title">
+                        Бесплатный доступ в приложении App In The Air
+                      </div>
+                      <div class="card__text">
+                        Бесплатная премиум подписка при покупке авиабилетов на travel.alfabank.ru
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card section__card_services">
+                  <div class="card card_services">
+                    <div class="card__wrap">
+                      <img class="card__image" src="../images/card_services_4.png"
+                        alt="Такси бизнес-класса со скидкой 20%" />
+                      <div class="card__title">
+                        Такси бизнес-класса со скидкой 20%
+                      </div>
+                      <div class="card__images">
+                        <img class="card__images-item" src="../images/card_weely_icon.png" alt="Weely">
+                        <img class="card__images-item" src="../images/card_get_icon.png" alt="Get">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card section__card_services">
+                  <div class="card card_services">
+                    <div class="card__wrap">
+                      <img class="card__image" src="../images/card_services_5.png"
+                        alt="Скидка в ресторанах Novikov Group в аэропорту Шереметьево" />
+                      <div class="card__title">
+                        Скидка в ресторанах Novikov Group в аэропорту Шереметьево
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card section__card_services">
+                  <div class="card card_services">
+                    <div class="card__wrap">
+                      <img class="card__image" src="../images/card_services_6.png"
+                        alt="Доступ в бизнес-залы Priority Pass по всему миру" />
+                      <div class="card__title">
+                        Доступ в бизнес-залы Priority Pass по всему миру
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Section services end -->
+
+      <!-- Section helper satrt -->
+      <section class="section section_helper" id="helper">
+        <div class="animation animation_transform-x-50">
+          <div class="container">
+            <div class="section__row">
+              <h2 class="section__heading">Персональный помощник</h2>
+              <div class="section__sub-heading section__sub-heading_helper">Бесплатно для владельцев <span
+                  class="mx-uppercase mx-addcolor">CARD PLUS</span></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="section__row section__row_getter section__row_helper">
+              <div class="section__col section__col_helper">
+                <img src="../images/helper.png" alt="Персональный помощник">
+              </div>
+              <div class="section__col section__col_helper section__col_list">
+                <div class="list list_helper">
+                  <div class="list__item">
+                    <div class="list__icon icon message"></div>
+                    <div class="list__text">Организует встречи, найдет гидов и переводчиков</div>
+                  </div>
+                  <div class="list__item">
+                    <div class="list__icon icon map"></div>
+                    <div class="list__text">Спланирует поездку по самым интересным местам вашего отдыха</div>
+                  </div>
+                  <div class="list__item">
+                    <div class="list__icon icon diamond"></div>
+                    <div class="list__text">Достанет билеты на мероприятия, даже если их уже нет в продаже</div>
+                  </div>
+                  <div class="list__item">
+                    <div class="list__icon icon map"></div>
+                    <div class="list__text">Закажет столик в ресторане, клубе или кафе</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section helper end -->
+
+      <!-- Section booking start -->
+      <section class="section section_booking" id="booking">
+        <div class="animation animation_transform-x-50">
+          <div class="container">
+            <h2 class="section__heading">Оформите свою новую карту для путешествий</h2>
+            <div class="section__row section__row_booking section__row_getter">
+              <div class="list list_booking">
+                <div class="list__item">
+                  <div class="list__label">До <span class="list__label-big">11%</span></div>
+                  <div class="list__text">
+                    Милями за услуги,<br /> оплаченные на travel.ru
+                  </div>
+                </div>
+                <div class="list__item">
+                  <div class="list__label">До <span class="list__label-big">11%</span></div>
+                  <div class="list__text">
+                    Милями за услуги,<br> оплаченные на travel.ru
+                  </div>
+                </div>
+                <div class="list__item">
+                  <div class="list__label"><span class="list__label-big">1 = 1</span></div>
+                  <div class="list__text">
+                    Оплата милями дилетов любых <br> авиакомпаний по курсу 1 миля = 1 Р
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row section__row-booking">
+              <div class="col col_7">
+                <img src="../images/card_booking.png" alt="Оформите свою новую карту для путешествий">
+              </div>
+              <div class="col col_5">
+                <div class="tab tab_booking" id="tab">
+                  <div class="tab__header">
+                    <div class="tab__label" data-label>Кредитная карта</div>
+                    <div class="tab__label" data-label>Дебетовая карта</div>
+                  </div>
+                  <div class="tab__content">
+                    <div class="tab__container" data-container>
+                      <button @click="showModal = true" class="button button_tab">Отправить заявку</button>
+                      <div class="tab__prices">
+                        <div class="tab__price-item">
+                          <div class="tab__price-label">Стоимость карты в год (руб.)</div>
+                          <div class="tab__price-text">6 490 (без пакета услуг),<br /> 4 990 (с пакетом услуг)</div>
+                        </div>
+                        <div class="tab__price-item">
+                          <div class="tab__price-label">Приветственные мили (шт.)</div>
+                          <div class="tab__price-text">1000</div>
+                        </div>
+                        <div class="tab__price-item">
+                          <div class="tab__price-label">Мили за покупки</div>
+                          <div class="tab__price-text">5</div>
+                        </div>
+                      </div>
+                      <div class="tab__more">
+                        <a class="link link_more" href="#">Все подробности</a>
+                      </div>
+                    </div>
+                    <div class="tab__container" data-container>
+                      <button @click="showModal = true" class="button button_tab">Отправить заявку</button>
+                      <div class="tab__prices">
+                        <div class="tab__price-item">
+                          <div class="tab__price-label">Стоимость карты в год (руб.)</div>
+                          <div class="tab__price-text">6 490 (без пакета услуг),<br /> 4 990 (с пакетом услуг)</div>
+                        </div>
+                        <div class="tab__price-item">
+                          <div class="tab__price-label">Приветственные мили (шт.)</div>
+                          <div class="tab__price-text">1000</div>
+                        </div>
+                        <div class="tab__price-item">
+                          <div class="tab__price-label">Мили за покупки</div>
+                          <div class="tab__price-text">5</div>
+                        </div>
+                      </div>
+                      <div class="tab__more">
+                        <a class="link link_more" href="#">Все подробности</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section booking end -->
+
+      <!-- Section footer start -->
+      <footer class="footer">
+        <div class="animation animation_opacity">
+          <div class="container">
+            <div class="row">
+              <div class="footer__col footer__col_logo">
+                <img class="footer__logo" src="../images/logo.png" alt="АО «Кредит Европа Банк»">
+                <div class="footer__logo-desc">АО «Кредит Европа Банк»</div>
+              </div>
+              <div class="footer__col footer__col_menu">
+                <div class="footer__menu">
+                  <a href="#" class="footer__menu-item">
+                    О банке
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Офисы и банкоматы
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Новости
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Вакансии
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Реализуемое имущество
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Раскрытие информации
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Ставки по вкладам
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Условия и тарифы
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Корпоративное управление
+                  </a>
+                  <a href="#" class="footer__menu-item">
+                    Карта сайта
+                  </a>
+                </div>
+              </div>
+              <div class="footer__col footer__col_phone">
+                <div class="phone phone_footer">
+                  <div class="phone__label">По России</div>
+                  <a href="tel:88009506570" class="phone__number">8 800 950 6570</a>
+                </div>
+                <div class="phone phone_footer">
+                  <div class="phone__label">По Миру</div>
+                  <a href="tel:88009506570" class="phone__number">8 800 950 6570</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Section footer end -->
+    </div>
+    <order-form v-if="showModal" @close="showModal = false"></order-form>
+  </div>
+</body>
+
+</html>

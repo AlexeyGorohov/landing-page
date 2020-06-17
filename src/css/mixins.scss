@@ -1,0 +1,43 @@
+@mixin resize($property, $max, $mid, $min: false) {
+  #{$property}: $max * 1px;
+
+  @media (max-width: $bpDesktop) {
+    #{$property}: calc(
+      (#{($max - $mid)} / #{($bpDesktop - $bpMobile - 1px) / 1px}) *
+        (100vw - #{$bpDesktop}) + #{$max * 1px}
+    );
+  }
+
+  @if ($min) {
+    @media (max-width: $bpMobile) {
+      #{$property}: calc(
+        (#{($mid - $min)} / #{($bpMobile - 320px) / 1px}) *
+          (100vw - #{$bpMobile}) + #{$mid * 1px}
+      );
+    }
+  } @else {
+    @media (max-width: $bpMobile) {
+      #{$property}: $mid * 1px;
+    }
+  }
+}
+
+@mixin showModal {
+  .page_show-modal & {
+    @content;
+  }
+}
+
+@mixin showMenu {
+  .page_show-menu & {
+    @content;
+  }
+}
+
+@mixin topMargin($property) {
+  #{$property}: 95px;
+}
+
+@mixin transitionPage {
+  transition: 0.5s ease-in-out;
+}
